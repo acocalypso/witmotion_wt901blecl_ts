@@ -1,4 +1,5 @@
 export interface ArraySensorDataInterface {
+  mag: ArrayCoordinatesInterface;
   axc: ArrayCoordinatesInterface;
   vel: ArrayCoordinatesInterface;
   ang: ArrayCoordinatesInterface;

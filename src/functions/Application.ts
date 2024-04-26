@@ -19,7 +19,7 @@ export class Application implements DeviceInterface {
   };
 
   public connect = async (
-    onDataReceived?: (data: SensorData) => void // Сигнатура функции, позволяющая передать сюда другую функцию со своими фокусами
+    onDataReceived?: (data: SensorData) => void
   ) => {
     this.device.connect(onDataReceived);
   };

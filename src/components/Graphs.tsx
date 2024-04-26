@@ -35,6 +35,14 @@ export const Graphs: React.FC<GraphsInterface> = ({ inputData }) => {
           z={inputData.ang.z}
           title={"Angle"}
         />
+
+        <SingleGraph
+          counter={inputData.counter}
+          x={inputData.mag.x}
+          y={inputData.mag.y}
+          z={inputData.mag.z}
+          title={"Magnetic Field"}
+        />
       </Grid2>
     </Grid2>
   );

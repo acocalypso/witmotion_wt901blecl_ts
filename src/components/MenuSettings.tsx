@@ -11,9 +11,9 @@ import { MagnetometerBackdrop } from "./MagnetometerButton";
 interface BasicMenuInterface {
   dis: boolean;
 }
-type ButtonLogic = "contained" | "outlined"; // для variant
+type ButtonLogic = "contained" | "outlined";
 
-// Содержание кнопки Settings
+
 const MenuSettings = ({ dis }: BasicMenuInterface) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -49,12 +49,12 @@ const MenuSettings = ({ dis }: BasicMenuInterface) => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <AccelerometerBackdrop /> {/* Калибровка акселерометра */}
-        <MagnetometerBackdrop /> {/* Калибровка магнетометра */}
+        <AccelerometerBackdrop />
+        <MagnetometerBackdrop />
         <Divider />
-        <AlgorithmTransition /> {/* Выбор кол-ва степеней свободы */}
+        <AlgorithmTransition />
         <Divider />
-        <RateSelect /> {/* Выбор частоты записи */}
+        <RateSelect />
       </Menu>
     </div>
   );

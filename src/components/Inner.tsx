@@ -7,7 +7,7 @@ import { SwitchSelector } from "../components/Switch";
 import { Graphs } from "../components/Graphs";
 import { dataFlowRestriction } from "../functions/DataFlowRestriction";
 import MenuSettings from "./MenuSettings";
-import { CsvInitInterface, DownloadCsv } from "./DownloadCsv.tsx";
+import { CsvInitInterface, DownloadCsv } from "./DownloadCsv";
 
 export const Inner: React.FC = () => {
   // для графиков
@@ -15,6 +15,7 @@ export const Inner: React.FC = () => {
     axc: { x: [], y: [], z: [] },
     vel: { x: [], y: [], z: [] },
     ang: { x: [], y: [], z: [] },
+    mag: { x: [], y: [], z: [] },
     counter: [0],
   };
 
